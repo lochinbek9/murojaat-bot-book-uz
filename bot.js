@@ -4,13 +4,11 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '7784332267:AAG8JtaOMnuzEzhpNcVS19x1RbGotqsb8B0';
 const bot = new TelegramBot(token, {polling: true });
 
-// Adminlarning chat IDlari ro'yxati
-const adminChatIds = ['5461253830']; // Adminlarning chat IDlarini qo'shing
 
-// Foydalanuvchi holatini saqlash uchun ob'ekt
+const adminChatIds = ['5461253830', '2288754']; 
 const userState = {};
 
-// Bot ishga tushganda
+
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, "Xush kelibsiz! Quyidagi tugmalardan birini tanlang:", {
