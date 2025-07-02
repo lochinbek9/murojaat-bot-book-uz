@@ -5,7 +5,7 @@ const token = '7784332267:AAG8JtaOMnuzEzhpNcVS19x1RbGotqsb8B0';
 const bot = new TelegramBot(token, {polling: true });
 
 
-const adminChatIds = ['5461253830', '2288754']; 
+const adminChatIds = ['5461253830', '2288754', "1079394056"]; 
 const userState = {};
 
 
